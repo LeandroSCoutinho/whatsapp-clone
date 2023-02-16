@@ -7,7 +7,7 @@ Projeto desenvolvido para treino de recursos do Javascript e Firebase.
 
 ### Recursos Usados
 
-Lista de recursos usados em aula para este projeto
+Lista de tecnologias usadas neste projeto
 
 | Recurso | Link |
 | ------ | ------ |
