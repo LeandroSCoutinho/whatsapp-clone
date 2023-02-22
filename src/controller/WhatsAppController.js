@@ -106,19 +106,19 @@ class WhatsAppController{
 
         this.el.photoContainerEditProfile.on('click', e =>{
             this.el.inputProfilePhoto.click();
-         });
+        });
 
-         this.el.inputNamePanelEditProfile.on('keypress', e =>{
+        this.el.inputNamePanelEditProfile.on('keypress', e =>{
              
              if(e.key === 'Enter'){
                 e.preventDefault();
                 this.el.btnSavePanelEditProfile.click();
             }
-         });
+        });
 
-         this.el.btnSavePanelEditProfile.on('click', e=>{
+        this.el.btnSavePanelEditProfile.on('click', e=>{
             console.log(this.el.inputNamePanelEditProfile.innerHTML);
-         });
+        });
 
          this.el.formPanelAddContact.on('submit', e=>{
             e.preventDefault();
@@ -212,6 +212,41 @@ class WhatsAppController{
          this.el.btnFinishMicrophone.on('click', ()=>{
             this.closeRecordMicrophone();
          });
+
+        this.el.inputText.on('keypress', e=>{
+            if(e.key === 'Enter' && !e.ctrlkey){
+                e.preventDefault();
+                this.el.btnSend.click();
+            }
+        });
+        this.el.inputText.on('keyup', e=>{
+
+            if(this.el.inputText.innerHTML.length){
+                this.el.inputPlaceholder.hide();
+                this.el.btnSendMicrophone.hide();
+                this.el.btnSend.show();
+            }else{
+                this.el.inputPlaceholder.show();
+                this.el.btnSendMicrophone.show();
+                this.el.btnSend.hide();
+            }
+        });
+
+        this.el.btnSend.on('click', e=>{
+            console.log(this.el.inputText);
+        });
+
+        this.el.btnEmojis.on('click', e=>{
+            this.el.panelEmojis.toggleClass('open');
+        });
+
+        this.el.panelEmojis.querySelectorAll('.emojik').forEach(emoji=>{
+            emoji.on('click', e=>{
+                console.log(emoji.dataset.unicode);
+            });
+        });
+
+
 
     }
     startRecordMicrophoneTime(){
