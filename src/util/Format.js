@@ -1,4 +1,4 @@
-class Format {
+export class Format {
      static getCamelCase(text){
         const div = document.createElement('div');
 
