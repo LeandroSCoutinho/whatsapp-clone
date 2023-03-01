@@ -220,6 +220,10 @@ export class WhatsAppController{
 
          this.el.inputDocument.on('change', e =>{
             if(this.el.inputDocument.files.length) {
+
+                this.el.panelDocumentPreview.css({
+                    'height':'1%'
+                });
                 let file = this.el.inputDocument.files[0];
 
                 this._documentPreviewController = new DocumentPreviewController(file);
