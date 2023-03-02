@@ -10,7 +10,7 @@ export class CameraController{
             this._videoEl.srcObject = stream;
             this._videoEl.play();
         }).catch(err=>{
-            console.log(err);
+            console.error(err);
         });
 
     }

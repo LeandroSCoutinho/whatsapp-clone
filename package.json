@@ -5,22 +5,22 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config webpack.config.js",
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "dev": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LeandroSCoutinho/whatsapp-clone.git"
+    "url": " "
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/LeandroSCoutinho/whatsapp-clone/issues"
-  },
-  "homepage": "https://github.com/LeandroSCoutinho/whatsapp-clone#readme",
-  "dependencies": {
-    "pdfjs-dist": "^2.0.489",
+  "devDependencies": {
     "webpack": "^3.1.0",
-    "webpack-dev-server": "^2.5.1"
+    "webpack-dev-server": "^2.5.1",
+    "worker-loader": "^1.1.1"
+  },
+  "dependencies": {
+    "firebase": "^4.13.1",
+    "pdfjs-dist": "^2.0.489"
   }
 }
