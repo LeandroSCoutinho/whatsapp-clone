@@ -259,9 +259,9 @@ export class WhatsAppController{
                         break;
                     }
 
-                    this.el.filenamePanelDocumentPreview.innerHTML = file.name;
                     this.el.imagePanelDocumentPreview.hide();
                     this.el.filePanelDocumentPreview.show();
+                    this.el.filenamePanelDocumentPreview.innerHTML = file.name;
 
                 });
 
