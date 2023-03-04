@@ -20,7 +20,6 @@
     "worker-loader": "^1.1.1"
   },
   "dependencies": {
-    "firebase": "^4.13.1",
     "pdfjs-dist": "^2.0.489"
   }
 }
