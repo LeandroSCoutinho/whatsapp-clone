@@ -1,6 +1,6 @@
 import { ClassEvent } from "../util/ClassEvent";
 
-export class MicroPhoneController extends ClassEvent{
+export class MicrophoneController extends ClassEvent{
     constructor(){
         super();
 
@@ -26,7 +26,7 @@ export class MicroPhoneController extends ClassEvent{
             track.stop();
         });
     }
-    startRecord(){
+    startRecorder(){
         if(this.isAvailable()){
             this._mediaRecorder = new MediaRecorder(this._stream, {
                 mimeType: this._mimeType                
@@ -66,7 +66,7 @@ export class MicroPhoneController extends ClassEvent{
             this.startTimer();
         }
     }
-    stopRecord(){
+    stopRecorder(){
         if(this.isAvailable()){
        
             this._mediaRecorder.stop();
