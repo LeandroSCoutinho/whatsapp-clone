@@ -8,12 +8,12 @@ Este é um projeto desenvolvido com o objetivo de praticar recursos do JavaScrip
 
 # Funcionalidades  
 
-Cadastro e autenticação de usuários utilizando o Firebase Authentication.  
-Armazenamento de mensagens em tempo real utilizando o Cloud Firestore.  
-Upload de imagens e arquivos utilizando o Cloud Storage.  
-Notificação de novas mensagens utilizando Cloud Functions.  
-Visualização de arquivos PDF utilizando o PDF.js.  
-Captura de imagens e áudio utilizando a API MediaDevices.getUserMedia().
+- Cadastro e autenticação de usuários utilizando o Firebase Authentication.  
+- Armazenamento de mensagens em tempo real utilizando o Cloud Firestore.  
+- Upload de imagens e arquivos utilizando o Cloud Storage.  
+- Notificação de novas mensagens utilizando Cloud Functions.  
+- Visualização de arquivos PDF utilizando o PDF.js.  
+- Captura de imagens e áudio utilizando a API MediaDevices.getUserMedia().
 
 ## Como executar o projeto
 #### Para executar este projeto localmente, siga os seguintes passos:
