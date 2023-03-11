@@ -12,14 +12,15 @@
     "type": "git",
     "url": " "
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Leandro Coutinho",
+  "license": "MIT",
   "devDependencies": {
     "webpack": "^3.1.0",
     "webpack-dev-server": "^2.5.1",
     "worker-loader": "^1.1.1"
   },
   "dependencies": {
+    "firebase": "^4.13.1",
     "pdfjs-dist": "^2.0.489"
   }
 }
