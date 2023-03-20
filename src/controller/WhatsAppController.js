@@ -344,7 +344,21 @@ export class WhatsAppController{
                     });
 
                 } else {
-                    console.error('Usuário não foi encontrado.');
+                    
+                    Chat.createIfNotExists(this._user.email, email).then(chat => {
+
+                        contact.chatId = chat.id;
+
+                        this._user.addContact(contact);
+
+                        this._user.chatId = chat.id;
+
+                        contact.addContact(this._user);
+
+                        console.info(`O contato ${email} foi adicionado.`);
+                        this.el.panelAddContact.hide();
+
+                    });
                 }
             });
 
